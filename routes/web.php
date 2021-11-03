@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('content');
-});
+//colleghiamo alla route il nome del controller e la funzione con la '@'
+Route::get('/', 'Movie@index')-> name('movie');
