@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 //colleghiamo alla route il nome del controller e la funzione con la '@'
-Route::get('/', 'Movie@index')-> name('movie');
+Route::get('/', 'MovieController@index')-> name('movie');
